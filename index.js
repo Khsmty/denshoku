@@ -1,7 +1,6 @@
 require('dotenv').config();
 
-let denshoku = '電飾まだですか';
-denshoku = denshoku
+const denshoku = '電飾まだですか'
   .split('')
   .sort(() => Math.random() - 0.5)
   .join('');
