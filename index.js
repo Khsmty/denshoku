@@ -1,6 +1,11 @@
 require('dotenv').config();
 
-const denshoku = '電飾まだですか'
+let str = '電飾まだですか';
+if (new Date().getDate() === 2) {
+  str = 'おみやげまだですか';
+}
+
+const denshoku = str
   .split('')
   .sort(() => Math.random() - 0.5)
   .join('');
