@@ -1,7 +1,7 @@
 require('dotenv').config();
 
 let str = '電飾まだですか';
-if (new Date().getDate() === 3) {
+if (new Date().getDate() === 2 && new Date().getHours() === 21) {
   str = 'おみやげまだですか';
 }
 
