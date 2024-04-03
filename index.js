@@ -1,11 +1,6 @@
 require('dotenv').config();
 
-let str = '電飾まだですか';
-if (new Date().getDate() === 2 && new Date().getHours() === 21) {
-  str = 'おみやげまだですか';
-}
-
-const denshoku = str
+const denshoku = '電飾まだですか'
   .split('')
   .sort(() => Math.random() - 0.5)
   .join('');
